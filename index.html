@@ -322,6 +322,9 @@
       .stack-grid { grid-template-columns: repeat(3, 1fr); }
     }
   </style>
+
+<!-- SEO -->
+<span style="display:none" aria-hidden="true">Jeanelfe Joy Delfinado</span>
 </head>
 <body>
 
@@ -513,10 +516,13 @@
           <li><a onclick="showPage('home')">Home</a></li>
           <li><a onclick="showPage('about')">About</a></li>
           <li><a onclick="showPage('projects')">Projects</a></li>
+          <li><a onclick="showPage('casestudies')">Case Studies</a></li>
           <li><a onclick="showPage('blog')">Blog</a></li>
+          <li><a onclick="showPage('services')">Services</a></li>
+          <li><a onclick="showPage('stack')">Stack</a></li>
           <li><a onclick="showPage('contact')">Contact</a></li>
         </ul>
-        <p class="footer-copy">&copy; 2026 Jean Delfinado</p>
+        <p class="footer-copy">&copy; 2026 Jeanelfe Joy Delfinado</p>
       </div>
     </div>
   </footer>
@@ -618,17 +624,21 @@
     </div>
   </div>
 
-  <footer style="margin-top:80px">
+  <footer>
     <div class="container">
       <div class="footer-inner">
         <div class="footer-logo">Jean<span>.</span></div>
         <ul class="footer-links">
           <li><a onclick="showPage('home')">Home</a></li>
+          <li><a onclick="showPage('about')">About</a></li>
           <li><a onclick="showPage('projects')">Projects</a></li>
+          <li><a onclick="showPage('casestudies')">Case Studies</a></li>
           <li><a onclick="showPage('blog')">Blog</a></li>
+          <li><a onclick="showPage('services')">Services</a></li>
+          <li><a onclick="showPage('stack')">Stack</a></li>
           <li><a onclick="showPage('contact')">Contact</a></li>
         </ul>
-        <p class="footer-copy">&copy; 2026 Jean Delfinado</p>
+        <p class="footer-copy">&copy; 2026 Jeanelfe Joy Delfinado</p>
       </div>
     </div>
   </footer>
@@ -674,10 +684,15 @@
         <div class="footer-logo">Jean<span>.</span></div>
         <ul class="footer-links">
           <li><a onclick="showPage('home')">Home</a></li>
+          <li><a onclick="showPage('about')">About</a></li>
+          <li><a onclick="showPage('projects')">Projects</a></li>
           <li><a onclick="showPage('casestudies')">Case Studies</a></li>
+          <li><a onclick="showPage('blog')">Blog</a></li>
+          <li><a onclick="showPage('services')">Services</a></li>
+          <li><a onclick="showPage('stack')">Stack</a></li>
           <li><a onclick="showPage('contact')">Contact</a></li>
         </ul>
-        <p class="footer-copy">&copy; 2026 Jean Delfinado</p>
+        <p class="footer-copy">&copy; 2026 Jeanelfe Joy Delfinado</p>
       </div>
     </div>
   </footer>
@@ -742,10 +757,15 @@
         <div class="footer-logo">Jean<span>.</span></div>
         <ul class="footer-links">
           <li><a onclick="showPage('home')">Home</a></li>
+          <li><a onclick="showPage('about')">About</a></li>
           <li><a onclick="showPage('projects')">Projects</a></li>
+          <li><a onclick="showPage('casestudies')">Case Studies</a></li>
+          <li><a onclick="showPage('blog')">Blog</a></li>
+          <li><a onclick="showPage('services')">Services</a></li>
+          <li><a onclick="showPage('stack')">Stack</a></li>
           <li><a onclick="showPage('contact')">Contact</a></li>
         </ul>
-        <p class="footer-copy">&copy; 2026 Jean Delfinado</p>
+        <p class="footer-copy">&copy; 2026 Jeanelfe Joy Delfinado</p>
       </div>
     </div>
   </footer>
@@ -826,9 +846,14 @@
         <ul class="footer-links">
           <li><a onclick="showPage('home')">Home</a></li>
           <li><a onclick="showPage('about')">About</a></li>
+          <li><a onclick="showPage('projects')">Projects</a></li>
+          <li><a onclick="showPage('casestudies')">Case Studies</a></li>
+          <li><a onclick="showPage('blog')">Blog</a></li>
+          <li><a onclick="showPage('services')">Services</a></li>
+          <li><a onclick="showPage('stack')">Stack</a></li>
           <li><a onclick="showPage('contact')">Contact</a></li>
         </ul>
-        <p class="footer-copy">&copy; 2026 Jean Delfinado</p>
+        <p class="footer-copy">&copy; 2026 Jeanelfe Joy Delfinado</p>
       </div>
     </div>
   </footer>
@@ -902,9 +927,14 @@
         <ul class="footer-links">
           <li><a onclick="showPage('home')">Home</a></li>
           <li><a onclick="showPage('about')">About</a></li>
+          <li><a onclick="showPage('projects')">Projects</a></li>
+          <li><a onclick="showPage('casestudies')">Case Studies</a></li>
+          <li><a onclick="showPage('blog')">Blog</a></li>
+          <li><a onclick="showPage('services')">Services</a></li>
+          <li><a onclick="showPage('stack')">Stack</a></li>
           <li><a onclick="showPage('contact')">Contact</a></li>
         </ul>
-        <p class="footer-copy">&copy; 2026 Jean Delfinado</p>
+        <p class="footer-copy">&copy; 2026 Jeanelfe Joy Delfinado</p>
       </div>
     </div>
   </footer>
@@ -1003,7 +1033,7 @@
           <label>Message</label>
           <textarea placeholder="Tell me what you have in mind..."></textarea>
         </div>
-        <a href="/cdn-cgi/l/email-protection#58323d363c3d343e616c183f35393134763b3735" class="btn btn-primary" style="width:100%;justify-content:center;display:flex">Send via Email</a>
+        <button type="button" onclick="sendEmail()" class="btn btn-primary" style="width:100%;justify-content:center;display:flex">Send via Email</button>
         <p style="font-size:0.76rem;color:var(--text-muted);text-align:center;margin-top:10px;font-weight:300">This will open your email client.</p>
       </div>
     </div>
@@ -1017,9 +1047,13 @@
           <li><a onclick="showPage('home')">Home</a></li>
           <li><a onclick="showPage('about')">About</a></li>
           <li><a onclick="showPage('projects')">Projects</a></li>
+          <li><a onclick="showPage('casestudies')">Case Studies</a></li>
           <li><a onclick="showPage('blog')">Blog</a></li>
+          <li><a onclick="showPage('services')">Services</a></li>
+          <li><a onclick="showPage('stack')">Stack</a></li>
+          <li><a onclick="showPage('contact')">Contact</a></li>
         </ul>
-        <p class="footer-copy">&copy; 2026 Jean Delfinado</p>
+        <p class="footer-copy">&copy; 2026 Jeanelfe Joy Delfinado</p>
       </div>
     </div>
   </footer>
@@ -1171,16 +1205,24 @@
     </div>
   </div>
 
-  <footer><div class="container"><div class="footer-inner">
-    <div class="footer-logo">Jean<span>.</span></div>
-    <ul class="footer-links">
-      <li><a onclick="showPage('home')">Home</a></li>
-      <li><a onclick="showPage('about')">About</a></li>
-      <li><a onclick="showPage('services')">Services</a></li>
-      <li><a onclick="showPage('contact')">Contact</a></li>
-    </ul>
-    <p class="footer-copy">&copy; 2026 Jean Delfinado</p>
-  </div></div></footer>
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">Jean<span>.</span></div>
+        <ul class="footer-links">
+          <li><a onclick="showPage('home')">Home</a></li>
+          <li><a onclick="showPage('about')">About</a></li>
+          <li><a onclick="showPage('projects')">Projects</a></li>
+          <li><a onclick="showPage('casestudies')">Case Studies</a></li>
+          <li><a onclick="showPage('blog')">Blog</a></li>
+          <li><a onclick="showPage('services')">Services</a></li>
+          <li><a onclick="showPage('stack')">Stack</a></li>
+          <li><a onclick="showPage('contact')">Contact</a></li>
+        </ul>
+        <p class="footer-copy">&copy; 2026 Jeanelfe Joy Delfinado</p>
+      </div>
+    </div>
+  </footer>
 </div>
 
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
@@ -1240,6 +1282,18 @@
     }
   }
 
+
+  // CONTACT FORM
+  function sendEmail() {
+    const name    = document.getElementById('contact-name')?.value || '';
+    const email   = document.getElementById('contact-email')?.value || '';
+    const subject = document.getElementById('contact-subject')?.value || 'Inquiry';
+    const message = document.getElementById('contact-message')?.value || '';
+    const to      = 'jendelf94@gmail.com';
+    const body    = encodeURIComponent('From: ' + name + ' <' + email + '>\n\n' + message);
+    const sub     = encodeURIComponent(subject);
+    window.location.href = 'mailto:' + to + '?subject=' + sub + '&body=' + body;
+  }
   // INIT
   document.addEventListener('DOMContentLoaded', () => {
     showPage('home');

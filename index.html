@@ -308,18 +308,18 @@
       .hamburger { display: flex; }
       .container { padding: 0 20px; }
       .hero-content { grid-template-columns: 1fr; gap: 36px; padding: 0 20px; }
-      .hero-right { display: none; }
+      .hero-right { display: flex; order: -1; margin-top: 60px; }
+      .hero-photo-wrap { width: 200px; height: 240px; }
+      .hero-stats { display: none; }
       .about-strip-grid, .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 32px; }
       .about-sidebar { position: static; }
-      .work-grid, .blog-grid, .projects-grid { grid-template-columns: 1fr; }
-      .services-grid { grid-template-columns: repeat(2, 1fr); }
+      .work-grid, .blog-grid, .services-grid, .projects-grid { grid-template-columns: 1fr; }
       .case-study-sections { grid-template-columns: 1fr; }
       .blog-page-grid { grid-template-columns: 1fr; }
       .blog-sidebar { position: static; }
       .social-links-grid { grid-template-columns: repeat(2, 1fr); }
       .footer-inner { flex-direction: column; text-align: center; }
       .footer-links { flex-wrap: wrap; justify-content: center; }
-      .stack-grid { grid-template-columns: repeat(3, 1fr); }
     }
   </style>
 

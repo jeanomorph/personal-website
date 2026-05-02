@@ -1,13 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
 <head>
-  <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-TSMB2VGF');</script>
-<!-- End Google Tag Manager -->
   <meta name="google-site-verification" content="XiBT36CCxWFWY4lJlYQauZks4T7Q79rb-Whs4athohk" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -332,16 +325,54 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       .footer-inner { flex-direction: column; text-align: center; }
       .footer-links { flex-wrap: wrap; justify-content: center; }
     }
+
+    /* --- Download Button Styles --- */
+
+/* Container to ensure the button aligns with the social icons row width */
+.resume-container {
+    margin-top: 12px;
+    width: 255px; /* Adjust this value if needed to match your social icons row exactly */
+}
+
+.btn-download {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 12px;
+    font-family: 'Bebas Neue', sans-serif; /* Matches your header style */
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.03); /* Subtle glass effect */
+    border: 1px solid var(--orange); /* Uses your brand orange */
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-download:hover {
+    background: var(--orange);
+    color: #111; /* Darker text on hover for readability */
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(232, 118, 42, 0.3);
+}
+
+.btn-download svg {
+    transition: transform 0.3s ease;
+}
+
+.btn-download:hover svg {
+    transform: translateY(2px);
+}
   </style>
 
 <!-- SEO -->
 <span style="display:none" aria-hidden="true">Jeanelfe Joy Delfinado</span>
 </head>
 <body>
-  <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TSMB2VGF"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
 
 <nav>
   <div class="nav-logo" onclick="showPage('home')">Jean<span>.</span></div>
@@ -403,6 +434,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <a class="hero-social-link" href="https://www.facebook.com/jeanelfe.joy.delfinado/" target="_blank">fb</a>
           <a class="hero-social-link" href="https://github.com/jeanomorph" target="_blank">GH</a>
           <a class="hero-social-link" href="https://www.kaggle.com/zeydee" target="_blank">Ka</a>
+        </div>
+        <div class="resume-container">
+          <a href="jean_delfinado_resume.pdf" download class="btn btn-download">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            Download CV
+          </a>
         </div>
       </div>
       <div class="hero-right">
